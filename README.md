@@ -1,0 +1,2 @@
+# fastapi library with mongodb
+
