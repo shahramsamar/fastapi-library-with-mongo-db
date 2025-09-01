@@ -8,8 +8,8 @@ app = FastAPI(debug=True)
 
 @app.get("/")
 async def book_list():
-    books = books_collection.find().to_list(length=10)
-    return books
+    books = list(books_collection.find({},{"_id":0}))
+    return {"books":books}
     
 
 
