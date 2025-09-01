@@ -19,7 +19,6 @@ A clean, fast, and scalable backend starter built with [FastAPI](https://fastapi
 - │ ├── app/ 
 - │ ├── models/  # Data models 
 - │ ├── routes/  # API routes
-- │├── services/ # Business logic
 - │└── main.py   # Entry point
 - │ ├── requirements.txt # Dependencies 
 - └── README.md 
