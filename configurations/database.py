@@ -3,8 +3,7 @@ from pymongo.server_api import ServerApi
 
 
 
-uri = "mongodb://localhost:27017/"
-
+uri = "mongodb://localhost:27017/?directConnection=true"
 # create a new client and connect to the server
 clinet = MongoClient(uri,server_api=ServerApi("1"))
 
@@ -18,5 +17,5 @@ except Exception as e:
 
 
 db = clinet.library
-colletion_name = db["books"]
+books_collection = db["books"]
     
